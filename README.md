@@ -18,7 +18,7 @@ This was a learning project built as an introduction to Python, computer vision,
 
 ## Requirements
 
-- Python 3.13+
+- Python 3.13
 - A webcam
 - The MediaPipe hand landmark model file: [`hand_landmarker.task`](https://developers.google.com/mediapipe/solutions/vision/hand_landmarker#models)
 

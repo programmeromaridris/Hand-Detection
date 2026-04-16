@@ -49,7 +49,7 @@ python HandDetection.py
 **Hand detection** is handled by MediaPipe's Hand Landmarker, which identifies 21 specific points (landmarks) on your hand, one for each knuckle joint, fingertip, and the wrist.
 
 **Finger counting** works by comparing landmark positions:
-- For the **thumb**, it checks if the tip (`landmark[4]`) is to the left of the knuckle below it (`landmark[3]`) on the X axis — since the hand is mirrored, this catches it pointing outward.
+- For the **thumb**, it checks if the tip (`landmark[4]`) is to the left of the knuckle below it (`landmark[3]`) on the X axis, since the hand is mirrored, this catches it pointing outward.
 - For the **other four fingers**, it checks if each fingertip is *above* (lower Y value) its second-to-last joint, meaning the finger is extended rather than curled.
 
 **Drawing** is done with OpenCV, each landmark is drawn as a small green dot, and the finger count is rendered as text in the top left corner.
